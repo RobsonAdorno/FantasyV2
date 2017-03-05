@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang = "pt-br">
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+	<meta charset="UTF-8">
+	<title>Site de Teste</title>
+	
+</head>
+<script language="javascript" src = "/root/Documentos/SiteHTML5/"></script>
+<body>
+<div id = "complementar">
+
+	<header id="headerdosite">
+	<hgroup>
+		<h1>Titulo Qualquer</h1>
+		<h2>Subtitulo Qualquer</h2>
+	</hgroup>
+
+	<img id = "icone" src="/root/Documentos/SiteHTML5/">
+
+<nav id = "menu">
+	<h1>Menu Principal</h1>
+	<ul type="disc"> 
+
+	<li onmouseover = "status('/root/Documentos/SiteHTML5')" onmouseout = "status('/root/Documentos/SiteHTML5')"><a href="titulo.html">tituloprimario</a></li>
+
+	<li onmouseover = "status('/root/Documentos/SiteHTML5')" onmouseout = "status('/root/Documentos/SiteHTML5')"><a href="titulo.html">titulomedio</a></li>
+
+	<li onmouseover = "status('/root/Documentos/SiteHTML5')" onmouseout = "status('/root/Documentos/CursoHTML5/projeto-glass-html5/_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
+
+	<li onmouseover = "status('/root/Documentos/SiteHTML5')" onmouseout = "status('/root/Documentos/SiteHTML5')"><a href="titulo">TituloFinal</a></li>
+	</ul>
+</nav>
+
+	</header>
+<section id="corpo">
+
+<article id = "titulo">
+<header id = "cabecalho-artigo">
+<hgroup>	
+<h3>Tecnologia > &nbsp;&nbsp;&nbsp; Teste1</h3>
+<h1>Outro titulo qualquer</h1>
+<h4>por Robson Adorno</h4>
+<h3 class="direita">Atualizado em 15/Fevereiro/2017</h3><!--para estipurlamos nomes de tags, usamos "class". É diferente de id, que é usado para um corpo inteiro.-->
+</hgroup>
+</header>
+
+<h2>O que é</h2> <!--rigth,left e center, justify. Indent serve para criar um paragrafo-->
+<p>O <span style = "font-weight: bolder;">Destaque</span> aleatoriedade <del>outro destaque</del> Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker. <!--Para ficar nitido, o &shy é para quebra de linha com hifen, para palavras em nossa linguagem -->
+
+
+<figure class = "fotoqualquer">
+<!-- Figure = legenda de fotos -->
+	<img src="/root/Documentos/SiteHTML5/">
+	<figcaption>
+		<h3>SubTitulo</h3>
+		<p>Paragrafo</p>
+	</figcaption>
+</figure>
+
+Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+<h2>Titulo</h2>
+<table id="castle">
+    <caption>Titulo</caption>
+	<tr><td class="ce">Teste</td><td class="cd">Aleatoriamente</td></tr>
+	<tr><td rowspan="2" class="ce">Camera</td><td class="cd">5MP para fotos</td></tr>
+	<tr><td class="cd">720p para vídeos</td></tr>
+	<tr><td rowspan="2" class="ce">Conectividade</td><td class="cd"> Wi-Fi</td></tr>
+	<tr><td class="cd">Bluetooth</td></tr>
+	<tr><td class="ce">Memória Interna</td><td class="cd"> 12GB</td>
+</table>
+<h2>SubTitulo</h2>
+<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+
+<h2>Titulo</h2>
+<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+
+</article>
+</section>
+
+<aside id = "direito">
+<h1>Titulo</h1>
+<h3>Subtitulo</h3>
+
+<h3>Titulo</h3>
+<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+</p>
+
+Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</aside>
+
+<footer id="rodapedapag">
+<p>Copyright&copy; 2017 - by Robson Adorno <br/>
+<a href = "http://facebook.com" target = "_blank">Facebook</a> | <a href = "http://twitter.com" target = "_blank">Twitter</p></a>
+</footer>
+</div>
+</body>
+</html>
