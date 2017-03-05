@@ -1,0 +1,62 @@
+package br.com.projectFantasy.controllers;
+//Classe onde trabalharemos a persistencia com o banco de dados HQL (Hibernate Query Language)
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.FormParam;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import br.com.ProjectFantasy.models.*;
+
+@Path("/tipoproduto")
+
+public class TipoProdutoController {
+
+@GET
+@Path("/all")
+@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})/*Aqui nos
+adicionamos o xml porque navegadores antigos tem uma dificuldade para ler JSONs,
+então criamos um arraylist capaz de trazer um xml*/
+
+public Response getAllTipoProduto(){
+	
+	EntityManagerFactory factory = Persistence.createEntityManagerFactory("TestePersistenceUnit");
+	EntityManager em = factory.createEntityManager();
+	Query q = em.createQuery("SELECT te FROM Teste te");
+	List<Teste> teste1 = q.getResultList();
+	return Response.ok().entity(teste2).build();
+	
+	
+}
+@POST //Estamos fazendo uma busca no banco de dados, por isso sera o post
+@Path("/new")
+@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+public Response createTesteBD(@FormParam("nomeTeste")String nomeTeste){
+	EntityManagerFactory factory = Persistence.createEntityManagerFactory("TestePersistenceUnit");
+	EntityManager em = factory.createEntityManager();
+	Teste te = new Teste();
+	tp.setNome(nomeTeste);
+	em.getTransaction().begin();
+	em.persist(tp);
+	em.getTransaction().commit();
+	em.close();
+	return Response.ok().build();
+	
+	
+}
+	
+	
+	
+	
+}
